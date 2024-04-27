@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Signika+Negative:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0;
+    /* font-family: 'Fredoka', sans-serif; */
+font-family: 'Signika Negative', sans-serif;
+/* font-family: 'Source Code Pro', monospace; */
+
+}
+#heading{
+    width: 100vw;
+    height: 150px;
+    background-color: #1F4172;
+    color: #efb9bf;
+    text-align: center;
+    margin-bottom: 25px;
+}
+h1{
+    padding-top: 50px;
+    font-size: 2.8rem;
+}
+h2{
+    padding: 15px;
+    color: #ee5e6f;
+    font-size: 2.1rem;
+    padding-bottom: 8px;
+    text-align: center;
+    text-shadow: #e98893 5px 0 10px;
+}
+.imgs{
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-bottom: 20px;
+display: flex;
+justify-content: center;
+resize: none;
+}
+.image{
+padding-left: 25px;
+min-width: 120px;
+min-height: 145px;
+border-radius: 60%;
+border: 4px solid #73212a;
+cursor: pointer;
+margin-right: 20px;
+}
+.image:hover{
+    border: 4px solid #e98893;
+}
+.img1{
+    background-image: url("images/rock.png");
+background-repeat: no-repeat;
+background-size: contain;
+
+}
+.img2{
+    background-image: url("images/paper.png");
+background-repeat: no-repeat;
+background-size: contain;
+}
+.img3{
+    background-image: url("images/scissor.png");
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.last{
+    padding-top: 68px;
+}
+#result{
+    font-size: 3.2rem;
+    color: rgb(88, 216, 174);
+    text-shadow: rgb(146, 208, 188) 5px 0 10px;
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 1.8rem;
+        padding: 30px;
+    }
+    
+    .imgs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+    .image{
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    #heading{
+        width: 100vw;
+        height: 100px;
+    }
+    h2{
+        font-size: 1.2rem;  
+        text-align: left; 
+    }
+    .last{
+        padding-top: 2px;
+    }
+}
